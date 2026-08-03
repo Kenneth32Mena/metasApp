@@ -1,10 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 import App from './App.jsx'
-
-createRoot(document.getElementById('root')).render(
+import Principal  from './components/compartidos/Principal.jsx';
+import Encabezado from './components/compartidos/Encabezado.jsx';
+import Pie from './components/compartidos/Pie.jsx';
+import logo from './img/logo.svg'
+let root =createRoot(document.getElementById('root'));
+root.render(
   <StrictMode>
-    <App />
+    <Encabezado/>
+    <Principal/>
+    <Pie/>
   </StrictMode>,
 )
