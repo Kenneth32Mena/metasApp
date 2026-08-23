@@ -1,0 +1,6 @@
+@reference "../../styles.css";
+
+.pie {
+   background: linear-gradient(315deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
+   @apply h-md text-xs text-right text-white relative;
+}

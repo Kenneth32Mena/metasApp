@@ -1,0 +1,17 @@
+@reference "../../styles.css";
+
+.principal {
+    min-height: calc(100vh - var(--spacing-xl) - var(--spacing-md));
+    @apply flex;
+}
+.aside {
+    @apply flex flex-col text-gray-700 bg-gray-100 shadow w-60 
+
+}
+
+.main{
+@apply w-full h-full overflow-scroll
+}
+.icono {
+  @apply h-6 w-6;
+}
