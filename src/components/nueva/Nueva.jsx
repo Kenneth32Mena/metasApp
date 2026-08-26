@@ -1,47 +1,50 @@
+import estilos from './Detalles.module.css';
 function Nueva() {
     const frecuencias = ["día", "semana", "mes", "año"];
     const iconos = ["💻", "🏃‍♂️", "📚", "✈️", "💵"];
 
 
     return (
-        <div>
-            <form action="#">
-                <label>
+        <div className="tarjeta"> 
+            <form action="#" className="p-4">
+                <label className="label">
                     Describe tu meta
-                    <input placeholder="ej. 52 caminatas" />
+                    <input placeholder="ej. 52 caminatas" className="input" />
                 </label>
-                <label>
+                <label className="label">
                     ¿CON QUE FRECUENCIA DESEAS CUMPLIR TU META?(ej. 1 vez a la semana)
-                    <input type="number" />
-                    <select>
+                    <div className="flex mb-6">
+                    <input type="number" className="input mr-6" />
+                    <select className="input">
                         {frecuencias.map(frecuencia=> <option value={frecuencia}>{frecuencia}</option>)}
                     </select>
+                    </div>
                 </label>
-                <label>
+                <label className="label">
                     ¿CUANTAS VECES DESEAS COMPLETAR ESTA META?
-                    <input type="number" />
+                    <input type="number"className="input" />
                 </label>
-                <label>
+                <label className="label">
                     ¿TIENE UNA FECHA LIMITE?
-                    <input type="date" />
+                    <input type="date" className="input" />
                 </label>
-                <label>
-                    ¿CUANTAS VECES HAZ COMPLETADO YA ESTA META
-                    <input type="number" />
+                <label className="label">
+                    ¿CUANTAS VECES HAZ COMPLETADO YA ESTA META?
+                    <input type="number" className="input" />
 
                 </label>
-                <label>
-                    ESCOGE EL ICONO PARA LA META
-                    <select>
+                <label className="label">
+                    ESCOGE EL ICONO PARA LA META.
+                    <select className='input'>
                         {iconos.map(icono => <option value={icono}>{icono}</option>)}
 
                     </select>
                 </label>
             </form>
-            <div>
-                <button></button>
+            <div className={estilos.botones}>
+                <button className="boton boton--negro">Crear</button>
 
-                <button></button>
+                <button className="boton boton--gris"> Cancelar</button>
             </div>
         </div>
     );

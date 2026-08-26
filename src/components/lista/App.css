@@ -1,13 +1,13 @@
 @reference "../../styles.css";
 .tarjeta {
-    @apply rounded-xl m-4 text-gray-700 text-xs mx-4 neu-flat
+    @apply rounded-xl m-4 text-gray-700 text-xs mx-4 neu-flat overflow-hidden
 }
 
 .boton {
   @apply text-sm font-bold py-1 px-4 rounded-full cursor-pointer;
 }
 .boton--negro {
-  @apply text-black neu-flat hover:bg-gray-300;
+  @apply text-white neu-flat hover:bg-gray-300;
 }
 
 .boton--rojo {
@@ -15,5 +15,12 @@
 }
 
 .boton--gris {
-  @apply neu-flat hover:bg-gray-200;
+  @apply text-black neu-flat hover:bg-gray-200;
+}
+
+.label{
+  @apply block uppercase text-xs font-bold mb-6 h-9;
+}
+.input {
+  @apply neu-concave w-full border rounded-xl bg-gray-100 h-6
 }

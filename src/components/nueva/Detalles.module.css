@@ -1,0 +1,5 @@
+@reference "../../styles.css";
+
+.botones{
+    @apply bg-linear-to-r from-gray-700 via-gray-200 to-gray-100 py-3 flex justify-between;
+}
