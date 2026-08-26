@@ -1,9 +1,9 @@
-import './pie.css'
+import estilos from './Pie.module.css'
 function Pie() {
     return(
         <>
-        <footer className="pie">
-            <small>Desarrollado y diseñado por Kenneth Mena Gómez &copy;. Todos los derechos reservados.</small>
+        <footer className={estilos.pie}>
+            <small>Desarrollado y diseñado por Kenneth Mena Gomez &copy;2026. Todos los derechos reservados.</small>
         </footer>
         </>
     );

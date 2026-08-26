@@ -1,13 +1,13 @@
 
-import "./vinculos.css";
+import estilos from "./Vinculos.module.css";
 
 function Vinculo ({Icono,texto,href}) {
 
 return (
     <>
-    <a href={href} className="vinculo">
-        <Icono className="icono"/>
-        <span  className="texto">{texto}</span>
+    <a href={href} className={estilos.vinculo}>
+        <Icono className={estilos.icono}/>
+        {texto && <span  className={estilos.texto}>{texto}</span>}
     </a>
     </>
 );

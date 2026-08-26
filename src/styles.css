@@ -1,9 +1,23 @@
 @import "tailwindcss";
+
 @theme {
---spacing-sm: 8px;
+  --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 32px;
   --spacing-xl: 48px;
-  --principal: 64px; 
+  --principal: 64px;
 
+}
+
+/* Neumorfismo nativo (Tailwind v4) */
+@utility neu-convex {
+  box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+}
+
+@utility neu-concave {
+  box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff;
+}
+
+@utility neu-flat {
+  box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
 }
