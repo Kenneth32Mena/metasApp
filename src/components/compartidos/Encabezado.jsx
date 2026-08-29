@@ -12,7 +12,7 @@ function Encabezado() {
             </div>
             <nav className={estilos.contenedor}>
 
-                 <Vinculo href="/perfil"  Icono={PerfilSVG}/>
+                 <Vinculo to="/perfil"  Icono={PerfilSVG}/>
             </nav>
         </header>
     );

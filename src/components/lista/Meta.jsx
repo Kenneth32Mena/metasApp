@@ -23,7 +23,7 @@ function Meta( { id, detalles, eventos, icono, periodo, meta, plazo, completado 
                         </div>
                     </div>
                 </div>
-                <button className="boton boton--negro">Completado</button>
+                <button className="boton boton--gris">Completado</button>
             </div>
         </>
     );
