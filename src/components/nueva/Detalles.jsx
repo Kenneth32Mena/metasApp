@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import estilos from './Detalles.module.css';
+import { Contexto } from '../../../servicios/Memoria';
+import { useNavigate } from 'react-router-dom';
 function Detalles() {
     const frecuencias = ["día", "semana", "mes", "año"];
     const iconos = ["💻", "🏃‍♂️", "📚", "✈️", "💵"];
@@ -17,9 +19,13 @@ function Detalles() {
     const Actualizar = (prop) => (event) => {
         setForm((estado) => ({ ...estado, [prop]: event.target.value }));
     };
+    const navegar = useNavigate();
     const crear = async () => {
-        console.log(form)
+        enviar({tipo: 'crear', meta: form})
+        navegar('/lista')
     }
+    const [estado, enviar]= useContext(Contexto);
+
     return (
         <div className="tarjeta"> 
             <form action="#" className="p-4">
