@@ -1,6 +1,6 @@
 @reference "../../styles.css";
 .tarjeta {
-    @apply rounded-xl m-4 text-gray-700 text-xs mx-4 neu-flat overflow-hidden
+    @apply rounded-xl m-4 text-gray-700 text-xs mx-4 neu-flat overflow-hidden bg-white
 }
 
 .boton {
