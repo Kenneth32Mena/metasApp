@@ -1,9 +1,9 @@
 function NoEcontrado() {
-    return ( 
-        <>
-        <p>No encontrado bro!</p>
-        </>
-     );
+	return (
+		<>
+			<p>No encontrado bro!</p>
+		</>
+	);
 }
 
 export default NoEcontrado;

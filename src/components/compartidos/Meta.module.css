@@ -1,17 +1,17 @@
 @reference "../../styles.css";
 
 .meta {
-  @apply grid grid-cols-[1fr_1fr_auto] p-2 items-center;
+	@apply grid grid-cols-[1fr_1fr_auto] p-2 items-center;
 }
 
 .icono {
-  @apply h-10 w-10 neu-concave rounded-full flex items-center justify-center text-xl;
+	@apply h-10 w-10 neu-concave rounded-full flex items-center justify-center text-xl;
 }
 
 .barra1 {
-  @apply  neu-concave h-1 w-40 rounded bg-gray-200;
+	@apply neu-concave h-1 w-40 rounded bg-gray-200;
 }
 
 .barra2 {
-  @apply h-1 w-0 rounded bg-linear-to-l from-green-200 to-blue-500;
+	@apply h-1 w-0 rounded bg-linear-to-l from-green-200 to-blue-500;
 }
