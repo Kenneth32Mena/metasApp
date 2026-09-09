@@ -2,7 +2,10 @@ import Vinculo from "./Vinculos";
 import ListaSVG from "../../img/lista.svg?react";
 import NuevaSVG from "../../img/nueva.svg?react";
 import estilos from "./Principal.module.css";
-function Principal({ children }) {
+interface PrincipalProps {
+	children: React.ReactNode;
+}
+function Principal({ children }: PrincipalProps) {
 	return (
 		<>
 			<div className={estilos.principal}>

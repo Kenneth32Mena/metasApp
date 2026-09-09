@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
 import estilos from "../compartidos/Meta.module.css";
 import "./App.css";
-
-function Meta({ id, detalles, eventos, icono, periodo, meta, completado }) {
+interface MetaProps {
+	id: Number;
+	icono: String;
+	eventos: number;
+	periodo: number;
+	detalles: String;
+	meta: number;
+	completado: number;
+}
+function Meta({ id, detalles, eventos, icono, periodo, meta, completado } : MetaProps) {
 	return (
 		<>
 			<Link to={`/lista/${id}`} className={estilos.meta + " tarjeta"}>
